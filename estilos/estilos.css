@@ -1,0 +1,290 @@
+/* ----------- Estilos generales ----------- */
+
+    *{
+        font-family: 'Lato', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+    }
+
+    :root{
+        --bg-color: #fff;
+        --text-color: #000;
+        --second-color: #ff7431;
+        --three-color: #4b4b4b;
+        --h1-font: 3.8rem;
+        --h2-font: 2.6rem;
+        --p-font: 1.1rem;
+    }
+
+    .body_inicio{
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+/* ----------- Estilos página inicio ----------- */
+
+    /* ----------- Estilos menu ----------- */
+
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        padding: 23px 13%;
+        transition: all .40s ease;
+    }
+
+    .logo img{
+        height: auto;
+        width: 250px;
+        max-width: 100%;
+    }
+
+    .navegacion{
+        display: flex;
+    }
+
+    .navegacion a{
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: var(--p-font);
+        padding: 10px 22px;
+        transition: all .40s ease;
+    }
+
+    .navegacion a:hover{
+        color: var(--second-color);
+    }
+
+    .header_iconos{
+        display: flex;
+        align-items: center;
+    }
+
+    .header_iconos i{
+        margin-left: 10px;
+        font-size: 24px;
+        color: var(--text-color);
+        transition: all .40s ease;
+        margin-right: 15px;
+    }
+
+    .header_iconos i:hover{
+        transform: scale(1.2);
+        color: var(--second-color)
+    }
+
+    #menu-icon{
+        font-size: 34px;
+        color: var(--text-color);
+        z-index: 10001;
+        cursor: pointer;
+        display: none;
+    }
+
+    header.sticky{
+        background: var(--bg-color);
+        padding: 12px 13%;
+        box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+    }
+
+    /* ----------- Estilos texto e imagen ----------- */
+
+    section{
+        padding: 80px 13%;
+    }
+
+    .home{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url("../img/background.png");
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .home_texto h1{
+        font-size: var(--h1-font);
+        margin: 15px 0 15px;
+    }
+
+    .home_texto h6{
+        color: var(--second-color);
+        font-size: 18px;
+        font-width: 600;
+        letter-spacing: 2px;
+    }
+
+    .home_texto p{
+        color: var(--three-color);
+        font-size: var(--p-font);
+        font-width: 500;
+        margin-bottom: 48px;
+    }
+
+    .ultima form{
+        width: 100%;
+        max-width: 460px;
+        position: relative;
+    }
+
+    .ultima form input:first-child{
+        position: absolute;
+        display: inline-block;
+        border: none;
+        outline: none;
+        background: var(--second-color);
+        color: var(--bg-color);
+        padding: 16px 40px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .home_img img{
+        height: auto;
+        width: 100%;
+    }
+
+    /* ----------- Estilos cajas  ----------- */
+
+    .container{
+        padding: 70px 13%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+        gap: 1.5rem;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .container-caja{
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        border: 1px solid #e9ecef;
+        border-radius: 20px;
+        padding: 20px 30px;
+        box-shadow: -11.729px -11.729px 32px rgb(255 255 255 /15%);
+        transition: all .40s ease;
+    }
+
+    .container-caja:hover{
+        transform: translateY(-15px);
+    }
+
+    .container_texto h4{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .container_texto p{
+        font-size: var(--p-font);
+        color: var(--three-color);
+        font-weight: 500;
+        margin-right: -150px;
+    }
+
+    .cantainer_img img{
+        height: auto;
+        width: 80px;
+    }
+
+    .texto_centrado{
+        text-align: center;
+    }
+
+    .texto_centrado h5{
+        color: var(--second-color);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .texto_centrado h2{
+        font-size: var(--h2-font);
+        line-height: 1.2;
+    }
+
+    .categorias_contenido{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+        gap: 1.5rem;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .caja img{
+        height: auto;
+        width: 130px;
+        margin-bottom: 20px;
+    }
+
+    .caja{
+        padding: 25px 60px;
+        border: 1px solid #e9ecef;
+        border-radius: 20px;
+        box-shadow: -11.729px -11.729px 32px rgb(255 255 255 /15%);
+        transition: all .40s ease;
+    }
+
+    .caja:hover{
+        transform: translateY(-15px);
+        color: var(--second-color);
+    }
+
+    .caja h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 1.3;
+        transition: all .40s ease;
+    }
+
+    .caja p{
+        font-size: var(--p-font);
+        color: var(--three-color);
+        font-weight: 500;
+    }
+
+    .boton_main{
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .btn{
+        display: inline-block;
+        padding: 16px 30px;
+        font-size: var(--p-font);
+        font-weight: 700;
+        background: var(--second-color);
+        color: var(--bg-color);
+        border-radius: 30px;
+        transition: all .40s ease;
+    }
+
+    .btn:hover{
+        transform: scale(0.9) translateY(-5px);
+    }
+
+
+
+
+
+
+
