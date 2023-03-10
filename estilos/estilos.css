@@ -166,7 +166,7 @@
         grid-template-columns: repeat(auto-fit,minmax(300px, auto));
         gap: 1.5rem;
         align-items: center;
-        cursor: pointer;
+        /*cursor: pointer;*/
     }
 
     .container-caja{
@@ -224,7 +224,7 @@
         grid-template-columns: repeat(auto-fit,minmax(300px, auto));
         gap: 1.5rem;
         align-items: center;
-        cursor: pointer;
+        /*cursor: pointer;*/
         text-align: center;
         margin-top: 4rem;
     }
@@ -294,7 +294,7 @@
         gap: 2rem;
         align-items: center;
         margin-top: 4rem;
-        cursor: pointer;
+        /*cursor: pointer;*/
         border-radius: 15px;
     }
 
