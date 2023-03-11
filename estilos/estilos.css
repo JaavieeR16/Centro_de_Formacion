@@ -448,7 +448,7 @@
         grid-template-columns: repeat(auto-fit,minmax(300px, auto));
         gap: 1.5rem;
         align-items: center;
-        cursor: pointer;
+        /*cursor: pointer;*/
         text-align: center;
         margin-top: 4rem;
     }
@@ -469,6 +469,85 @@
     .texto_centrado_general h2{
         font-size: var(--h2-font);
         line-height: 1.2;
+    }
+
+/* ----------- Estilos página todos cursos ----------- */
+
+    .cursos_contenido{
+        cursor: pointer;
+    }
+
+    .cursos_contenido h3{
+        color: var(--text-color);
+    }
+
+/* ----------- Estilos página info cursos ----------- */
+
+    .info_cursos{
+        background: url("../img/background2.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fila2{
+        margin-top: 100px;
+        background: var(--bg-color);
+        padding: 0px 0px 10px 0px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+        transition: all .40s ease;
+    }
+
+    .fila2 img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .info_cursos_texto{
+        padding: 35px 20px;
+    }
+
+    .info_cursos_texto h5{
+        color: var(--second-color);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .info_cursos_texto p{
+        color: var(--text-color);
+        font-size: var(--p-font);
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .info_cursos_texto ul{
+        margin-top: 10px;
+    }
+
+    .info_cursos_texto ul li{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: var(--p-font);
+        letter-spacing: 1px;
+    }
+
+    .info_cursos_texto h3{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        margin: 15px 0 15px;
+        transition: all .40s ease;
+    }
+
+    .info_cursos_texto h6{
+        color: #696969;
+        font-size: var(--p-font);
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
     }
 
 /* ----------- Estilos responsive inicio ----------- */
