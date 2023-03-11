@@ -288,7 +288,7 @@
         background-position: center;
     }
 
-    .cursos_contenido{
+    .cursos_contenido1{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(300px, auto));
         gap: 2rem;
@@ -475,6 +475,12 @@
 
     .cursos_contenido{
         cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+        gap: 2rem;
+        align-items: center;
+        margin-top: 4rem;
+        border-radius: 15px;
     }
 
     .cursos_contenido h3{
